@@ -1,0 +1,192 @@
+*{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #87ceeb;
+}
+.todoBag{
+    width: 40%;
+    height: 600px;
+    background-color: #860086;
+    margin: 100px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.todoBag #todoContainer{
+    background-color: #860086;
+    height: 500px;
+    overflow-y: auto;
+}
+.todoBag .title{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    margin-top: 10px;
+    color:#ffffff;
+    background-color: #860086;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Tilt Prism', cursive;
+}
+.todoBag .notify{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    margin-top: 10px;
+    color:#ff0000;
+    background-color: #860086;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Tilt Prism', cursive;
+}
+.todoBag .todoInput{
+    width: 90%;
+    height: 60px;
+    margin: 10px auto;
+    background-color: #860086;
+}
+.todoBag .todoInput form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #860086;
+}
+.todoBag .todoInput .input{
+    width: 75%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.todoBag .todoInput .input textarea{
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    color: #860086;
+    background-color: #ffffff;
+    resize: none;
+    text-align: center;
+}
+.todoBag .todoInput .button{
+    width: 20%;
+    background-color: #860086;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todoBag .todoInput .button input{
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #860086;
+    font-family: 'Shantell Sans', cursive;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.todoBag .todoInput .button input:hover{
+    background-color: #860086;
+    font-size: 18px;
+    border-color: #ffffff !important;
+    color: #fff;
+    transition: 1s;
+}
+.todoBag .eachTodo{
+    width: 95%;
+    height: auto;
+    background-color: #860086;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.todoBag .eachTodo .todoId{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #ffffff;
+    color: #860086;
+    font-family: 'Shantell Sans', cursive;
+}
+.todoBag .eachTodo .todoName{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #ffffff;
+    color: #860086;
+    font-family: 'Shantell Sans', cursive;
+}
+.todoBag .eachTodo .strike{
+    text-decoration: line-through;
+}
+.todoBag .eachTodo .todoEdit{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #ffffff;
+    color: #860086;
+    font-family: 'Shantell Sans', cursive;
+}
+.todoBag .eachTodo .todoDelete{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #ffffff;
+    color: #860086;
+    font-family: 'Shantell Sans', cursive;
+}
+.todoBag .eachTodo .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #860086;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.todoBag .eachTodo .todoHover:hover{
+    background-color: #860086;
+    color: #ffffff;
+    transition: 1s;
+}
+.todoBag .eachTodo .todoHover:hover .icon{
+    background-color: #860086;
+    color: #ffffff;
+    transition: 1s;
+}
+
+/* When the browser is between 961px and 1220px */
+@media (min-width: 961px) and (max-width: 1200px) {
+    .todoBag {
+        width: 60%;
+    }
+}
+/* When the browser is between 800px and 960 */
+@media (min-width: 800px) and (max-width: 960px) {
+    .todoBag {
+        width: 70%;
+    }
+}
+/* When the browser is between 600px and 799 */
+@media (min-width: 600px) and (max-width: 799px) {
+    .todoBag {
+        width: 80%;
+    }
+}
+/* When the browser is between 600px and 799 */
+@media (max-width: 599px) {
+    .todoBag {
+        width: 95%;
+    }
+}
